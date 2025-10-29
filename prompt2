@@ -1,0 +1,9 @@
+sağol kankam. süpersin.
+şimdi updatelerimizi paylaşıyorum.
+1- Loading Scene Models yazarken sadece hdri backgroundunu görüyoruz. ve çok cheap duruyor ne yazıkki. bir jpeg linkleyelim, mesela start a bastık ya, 0.1 saniye sonra o jpeg gelsin ekrana, sonra yüklemeye başlasın, tüm modeller yüklenince 0.1 saniye bekle, ve jpegi kaldır scene in içine girelim. ona ayrı bir yer ayır kodda tabi de, şimdilik llink oalrak açılış jpegibi göster, sonra ben onu değiştireceğim.
+2-her case de ve onların her opsiyonunda sağda ve solda 200 pxl genişliğinde 500 pxl yüksekliğinde, leftteyse lefften 10 pxl mesafede, right taysa righttan 10 pxl mesafede bir html box, linklenmediyse içine yazı yazacağımız text box olmalıdır. ya da bir linkle png ya da jpeg linklersek onu da görebilmeliyiz. eğer null ise, o zaman hiçbirşey görmeyiz.
+3-genel olarak tüm kameralarda, kamera rotate orbit cart curtla asla 0,0,0 ın altına gitmemelidir. 
+4-açılış sahnesinde, sadece y ekseninde dönmelidir, kamera orthografik olmalıdır perspektif değil. 
+5-case 1 de kamerayı 0 ın tam ters yönüne aynı yöne koymaya çalışıyoruz, ama yapamıyorum. ayrıca hareket alanı çok yüksek, sağa sola yukarı aşağıya 5er derece hareket edebilsin sadece.
+
+lütfen bunları updatele.
