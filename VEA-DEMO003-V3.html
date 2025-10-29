@@ -271,6 +271,7 @@
         }
     </style>
     
+
     <script type="importmap">
         {
             "imports": {
@@ -302,13 +303,16 @@
     <button id="modelToggleBtn2" style="position: absolute; left: 120px; top: 9px; backdrop-filter: blur(8px); background: rgba(0,0,0,.55); border: 1px solid rgba(255,255,255,.08); border-radius: 4px; box-shadow: 0 10px 30px rgba(0,0,0,.25); z-index: 10; padding: 4px 8px; color: #fff; font-size: 11px; font-weight: 500; text-align: center; margin: 0; font-family: Helvetica, Arial, sans-serif; display: none;">Model 2</button>
     <button id="modelToggleBtn3" style="position: absolute; left: 180px; top: 9px; backdrop-filter: blur(8px); background: rgba(0,0,0,.55); border: 1px solid rgba(255,255,255,.08); border-radius: 4px; box-shadow: 0 10px 30px rgba(0,0,0,.25); z-index: 10; padding: 4px 8px; color: #fff; font-size: 11px; font-weight: 500; text-align: center; margin: 0; font-family: Helvetica, Arial, sans-serif; display: none;">Model 3</button>
     <button id="modelToggleBtn4" style="position: absolute; left: 240px; top: 9px; backdrop-filter: blur(8px); background: rgba(0,0,0,.55); border: 1px solid rgba(255,255,255,.08); border-radius: 4px; box-shadow: 0 10px 30px rgba(0,0,0,.25); z-index: 10; padding: 4px 8px; color: #fff; font-size: 11px; font-weight: 500; text-align: center; margin: 0; font-family: Helvetica, Arial, sans-serif; display: none;">Model 4</button>
+    <button id="modelToggleBtn5" style="position: absolute; left: 300px; top: 9px; backdrop-filter: blur(8px); background: rgba(0,0,0,.55); border: 1px solid rgba(255,255,255,.08); border-radius: 4px; box-shadow: 0 10px 30px rgba(0,0,0,.25); z-index: 10; padding: 4px 8px; color: #fff; font-size: 11px; font-weight: 500; text-align: center; margin: 0; font-family: Helvetica, Arial, sans-serif; display: none;">Model 5</button>
+    <button id="modelToggleBtn6" style="position: absolute; left: 360px; top: 9px; backdrop-filter: blur(8px); background: rgba(0,0,0,.55); border: 1px solid rgba(255,255,255,.08); border-radius: 4px; box-shadow: 0 10px 30px rgba(0,0,0,.25); z-index: 10; padding: 4px 8px; color: #fff; font-size: 11px; font-weight: 500; text-align: center; margin: 0; font-family: Helvetica, Arial, sans-serif; display: none;">Model 6</button>
 
 
-    <<button id="fullscreenButton" style="position: absolute; right: 400px; top: 10px; backdrop-filter: blur(8px); background: rgba(0,0,0,.55); border: 1px solid rgba(255,255,255,.08); border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,.25); z-index: 10; padding: 8px 12px; color: #fff; font-size: 12px; font-weight: 500; text-align: center; margin: 0; font-family: Helvetica, Arial, sans-serif;">Full Screen</button>
+<button id="fullscreenButton" style="position: absolute; right: 400px; top: 10px; backdrop-filter: blur(8px); background: rgba(0,0,0,.55); border: 1px solid rgba(255,255,255,.08); border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,.25); z-index: 10; padding: 8px 12px; color: #fff; font-size: 12px; font-weight: 500; text-align: center; margin: 0; font-family: Helvetica, Arial, sans-serif;">Full Screen</button>
     <button id="projectInfoButton" style="position: absolute; right: 300px; top: 10px; backdrop-filter: blur(8px); background: rgba(0,0,0,.55); border: 1px solid rgba(255,255,255,.08); border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,.25); z-index: 10; padding: 8px 12px; color: #fff; font-size: 12px; font-weight: 500; text-align: center; margin: 0; font-family: Helvetica, Arial, sans-serif;">Project Info</button>
     <button id="studioInfoButton" style="position: absolute; right: 200px; top: 10px; backdrop-filter: blur(8px); background: rgba(0,0,0,.55); border: 1px solid rgba(255,255,255,.08); border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,.25); z-index: 10; padding: 8px 12px; color: #fff; font-size: 12px; font-weight: 500; text-align: center; margin: 0; font-family: Helvetica, Arial, sans-serif;">Studio Info</button>
     <button id="hintButton" style="position: absolute; right: 10px; top: 10px; backdrop-filter: blur(8px); background: rgba(0,0,0,.55); border: 1px solid rgba(255,255,255,.08); border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,.25); z-index: 10; padding: 8px 12px; color: #fff; font-size: 12px; font-weight: 500; text-align: center; margin: 0; font-family: Helvetica, Arial, sans-serif;">Hint</button>
     <button id="creatorsNoteButton" style="position: absolute; right: 80px; top: 10px; backdrop-filter: blur(8px); background: rgba(0,0,0,.55); border: 1px solid rgba(255,255,255,.08); border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,.25); z-index: 10; padding: 8px 12px; color: #fff; font-size: 12px; font-weight: 500; text-align: center; margin: 0; font-family: Helvetica, Arial, sans-serif;">Creators Note</button>
+    
     
     <div id="description"></div>
     <div id="hoverText">Click to open link</div>
@@ -411,6 +415,25 @@
             <p>Right panel for Bedroom 1 WC view.</p>
         </div>
 
+    <div id="html_scene4_cam5_left">
+            <h3>Bedroom 1 WC</h3>
+            <p>Left panel for Bedroom 1 WC view.</p>
+        </div>
+        <div id="html_scene5_cam4_right">
+            <h3>Bedroom 1 WC (R)</h3>
+            <p>Right panel for Bedroom 1 WC view.</p>
+        </div>
+
+    <div id="html_scene4_cam6_left">
+            <h3>Bedroom 1 WC</h3>
+            <p>Left panel for Bedroom 1 WC view.</p>
+        </div>
+        <div id="html_scene4_cam6_right">
+            <h3>Bedroom 1 WC (R)</h3>
+            <p>Right panel for Bedroom 1 WC view.</p>
+        </div>
+
+
         <!-- Scene 5 --><div id="html_scene5_left">
             <h3>Scene 5: Walk-Thru</h3>
             <p>Use W, A, S, D to move. Shift to sprint. Space to jump.</p>
@@ -497,7 +520,10 @@
             document.getElementById('modelToggleBtn1'),
             document.getElementById('modelToggleBtn2'),
             document.getElementById('modelToggleBtn3'),
-            document.getElementById('modelToggleBtn4')
+            document.getElementById('modelToggleBtn4'),
+            document.getElementById('modelToggleBtn5'),
+            document.getElementById('modelToggleBtn6')
+
         ];
         const leftHtmlPanel = document.getElementById('leftHtmlPanel');
         const rightHtmlPanel = document.getElementById('rightHtmlPanel');
@@ -948,7 +974,7 @@
                             autoRotateSpeed: 1.0,
                             enablePan: false,
                             enableZoom: false,
-                            enableRotate: true // Allow user override
+                            enableRotate: false // Allow user override
                         });
                         
                         updateHtmlPanels('html_scene0_left', 'html_scene0_right'); // --- ADDED ---
@@ -962,20 +988,15 @@
                         // Models 1 and 5 are already loaded, just update camera
                         setupSceneCamera({
                             type: 'orbit',
-                            cameraType: 'perspective', // --- UPDATED: Back to Perspective ---
-                            pos: { x: 0, y: 20, z: 15 }, // Same position
-                            lookAt: { x: 0, y: 1, z: 0 },
-                            fov: 50,
-                            autoRotate: false,
-                            // --- UPDATED: 5 degree movement limit ---
-                            minPolar: 0.58,     // 38.2 deg - 5 deg
-                            maxPolar: 0.754,    // 38.2 deg + 5 deg
-                            minAzimuth: -0.087, // -5 deg
-                            maxAzimuth: 0.087,  // +5 deg
-                            // ---
+                            cameraType: 'orthographic', // --- UPDATED ---
+                            pos: { x: 0, y: 30, z: 15 }, 
+                            lookAt: { x: 0, y: 4, z: 0 },
+                            // fov: 27, // Not needed for Ortho
+                            autoRotate: true,
+                            autoRotateSpeed: 1.0,
                             enablePan: false,
                             enableZoom: true,
-                            enableRotate: true
+                            enableRotate: true // Allow user override
                         });
                         
                         updateToggleButtons([
@@ -1005,19 +1026,16 @@
                         ]);
                         
                         setupSceneCamera({
-                            type: 'orbit',
-                            cameraType: 'perspective', // --- UPDATED ---
-                            pos: { x: -10, y: 10, z: -10 }, // New fixed position
-                            lookAt: { x: 0, y: 1, z: 0 },
-                            fov: 50, // Wider FoV
-                            autoRotate: false,
-                            minPolar: Math.PI / 4,
-                            maxPolar: (Math.PI / 2) * 0.98, // --- UPDATED: Respect Y=0 limit ---
-                            minAzimuth: -Math.PI / 6,
-                            maxAzimuth: Math.PI / 6,
-                            enablePan: true,
+                           type: 'orbit',
+                            cameraType: 'orthographic', // --- UPDATED ---
+                            pos: { x: 0, y: 30, z: 15 }, 
+                            lookAt: { x: 0, y: 4, z: 0 },
+                            // fov: 27, // Not needed for Ortho
+                            autoRotate: true,
+                            autoRotateSpeed: 1.0,
+                            enablePan: false,
                             enableZoom: true,
-                            enableRotate: true
+                            enableRotate: true // Allow user override
                         });
                         
                         handleVariantClick(0); // Show "Option 1" by default
@@ -1035,17 +1053,18 @@
                         updateToggleButtons(null); // Hide toggles
                         
                         setupSceneCamera({
-                            type: 'orbit',
-                            cameraType: 'perspective', // --- UPDATED ---
-                            pos: { x: 15, y: 15, z: 15 },
-                            lookAt: { x: 0, y: 1, z: 0 },
-                            fov: 60,
-                            autoRotate: true,
-                            autoRotateSpeed: 0.5,
-                            // min/maxPolar will use default (Y=0 limit)
-                            enablePan: true,
+                           type: 'orbit',
+                            cameraType: 'orthographic', // --- UPDATED ---
+                            pos: { x: 15, y: 8, z: -15 }, 
+                            lookAt: { x: 0, y: 4, z: 0 },
+                            // fov: 27, // Not needed for Ortho
+                            
+
+                            autoRotate: false,
+                            autoRotateSpeed: 1.0,
+                            enablePan: false,
                             enableZoom: true,
-                            enableRotate: true // Full 360 mouse control
+                            enableRotate: true // Allow user override
                         });
                         
                         updateHtmlPanels('html_scene3_left', 'html_scene3_right'); // --- ADDED ---
@@ -1062,6 +1081,8 @@
                             { name: "Bathroom", id: "cam2" },
                             { name: "Bedroom 1", id: "cam3" },
                             { name: "Bedroom 1 WC", id: "cam4" },
+                             { name: "Bedroom 2", id: "cam5" },
+                              { name: "Bedroom 2 WC", id: "cam6" },
                             // Note: Only 4 buttons available in HTML
                         ]);
                         
@@ -1138,35 +1159,47 @@
                     let camConfig = {};
                     switch(index) {
                         case 0: // Salon
-                            camConfig = { pos: { x: 1.4, y: 1.6, z: -0.6 }, lookAt: { x: 1.4, y: 1.6, z: -1.6 }, fov: 50 };
+                            camConfig = { pos: { x: 1, y: 1.6, z: 1.6 }, lookAt: { x: 1, y: 1.6, z: 1.5 }, fov: 80 };
                             updateHtmlPanels('html_scene4_cam1_left', 'html_scene4_cam1_right');
                             break;
-                        case 1: // Bathroom
-                            camConfig = { pos: { x: -2, y: 1.6, z: -3.8 }, lookAt: { x: -1, y: 1.6, z: -3.8 }, fov: 60 };
+
+                        case 1: // Kİthen
+                            camConfig = { pos: { x: -2, y: 1.6, z: 3.1 }, lookAt: { x: -2.1, y: 1.6, z: 3.2 }, fov: 80 };
                             updateHtmlPanels('html_scene4_cam2_left', 'html_scene4_cam2_right');
                             break;
+
                         case 2: // Bedroom 1
-                            camConfig = { pos: { x: 4.5, y: 1.6, z: -0.6 }, lookAt: { x: 4.5, y: 1.6, z: -1.6 }, fov: 50 };
+                            camConfig = {  pos: { x: -2, y: 1.6, z: 0 }, lookAt: { x: -2.1, y: 1.6, z: -.1 }, fov: 80 };
                             updateHtmlPanels('html_scene4_cam3_left', 'html_scene4_cam3_right');
                             break;
+
                         case 3: // Bedroom 1 WC
-                            camConfig = { pos: { x: 3.3, y: 1.6, z: -4 }, lookAt: { x: 4.3, y: 1.6, z: -4 }, fov: 60 };
+                            camConfig = { pos: { x: -2, y: 1.6, z: 2.1 }, lookAt: { x: -2.1, y: 1.6, z: 2.2 }, fov: 80 };
+                            updateHtmlPanels('html_scene4_cam2_left', 'html_scene4_cam2_right');
+                            break;
+
+                             case 4: // Bedroom 2
+                            camConfig = {  pos: { x: 4.4, y: 1.6, z: 0 }, lookAt: { x: 4.5, y: 1.6, z: -.1 }, fov: 80 };
+                            updateHtmlPanels('html_scene4_cam4_left', 'html_scene4_cam4_right');
+                            break;
+                             case 5: // Bedroom 2 WC
+                            camConfig = {  pos: { x: 3.9, y: 1.6, z: 3.7 }, lookAt: { x: 4.0, y: 1.6, z: 3.8 }, fov: 80 };
                             updateHtmlPanels('html_scene4_cam4_left', 'html_scene4_cam4_right');
                             break;
                         // Add cases for Camera 5 & 6 if buttons are added
                     }
                     
                     setupSceneCamera({
-                        type: 'static_orbit', // Static pos, auto-rotate
-                        cameraType: 'perspective', // --- UPDATED ---
+                        type: 'static_orbit', // Tipi 'orbit' veya 'static_orbit' kalabilir
+                        cameraType: 'perspective',
                         pos: camConfig.pos,
                         lookAt: camConfig.lookAt,
                         fov: camConfig.fov || 50,
-                        autoRotate: true,
+                        autoRotate: false,        // --- DEĞİŞTİ: Otomatik dönmeyi kapat
                         autoRotateSpeed: 1.0,
-                        enablePan: false,
-                        enableZoom: false,
-                        enableRotate: false // No mouse control
+                        enablePan: false,         // Pan kapalı kalsın (kameranın hedefi kaymasın)
+                        enableZoom: true,         // --- DEĞİŞTİ: Zoom açıldı
+                        enableRotate: true        // --- DEĞİŞTİ: Kullanıcı rotasyonu açıldı
                     });
                     
                     descriptionEl.textContent = `Camera: ${modelToggleButtons[index].textContent}`;
@@ -1614,5 +1647,6 @@
     </script>
 </body>
 </html>
+
 
 
