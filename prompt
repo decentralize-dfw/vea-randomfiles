@@ -1,0 +1,89 @@
+şidmi tam creative control istiyorum kurguda.
+
+şuan 11 12 13, 21 22 23, falan diye gidiyoruz ya. 
+
+modelleri, sesleri html leri tek tek yüklüyoruz ya. 
+
+ve sırayla gösteriyoruz.
+
+çok daha interaktif birşey istiyorum.
+
+
+
+kural, scene in 
+
+
+
+şimdi açılışta model 1 i ve 5i aynanda görmeliyiz. model 1 0,0,0 noktasında olucak, biz onun etrafında otomatik bir rotationla döneceğiz.  20 yüksekliğinde, ve 30 metre çapında bir dönüş olmalıdır bu. kamera orthograpik olmalı, blender ayarlarına göre lensi 27 olmalıdır. eğer 3js de bu ayar farklıysa uydur. onu ben tıpkı diğer değelrler gibi koddan değiştirebilmeliyim. bunu ana prensip yapma, bu scene 1 in ana prensibi(controls.autoRotate = true;
+
+controls.autoRotateSpeed = 1.0;) tamam mı, click to enter a basıldığı zaman start a basılmadan önce, biz bunu göreceğiz. start a basılınca kamera sabitlenecek. ve çok az oynayacak. (controls.minPolarAngle = Math.PI / 4;  // aşağı 45°
+
+controls.maxPolarAngle = Math.PI * 3/4; // yukarı 135°
+
+controls.minAzimuthAngle = -Math.PI / 6; // sağa 30°
+
+controls.maxAzimuthAngle = Math.PI / 6;  // sola 30°)
+
+burdaki üc tane model henüz aramızda yok, o yüzden null koy onlara. birincisinin adı surrounding, ikincisinin adı transportation, üçüncüsünün adı units. üstte bu üç ismi göreceğiz, ve bunlar basıldıkça model 1 ve 5 bu ekranda sabit duracak, bu modeller yüklenmiş olucak önceden, bu şekilde, hangisine tıklarsam o modeli onun bilgilerini göreceğim.
+
+
+
+burdan start a basıldığı zaman, bir sonraki scene de gene model 1 i görüyorum, fakat bu sefer model 5 opsiyonel. opsiyonlardan birisi model 5, ikinci opsiyon. adı da default. 
+
+birinci opsiyonuz model 1 ile model 4ü görmeliyiz, sabit açıdan gene. kamera aynı kalsın ama sen gene editleyebilmem için bilgilerini yaz. ikinci opsiyon ise model 3 ile model beş. bunlar önceden yüklenmiş olmalı ki smooth transition olsun aralarında. sadece tıklanmış olmayan gözükmesin.  
+
+scene 3 te ise model 2 ile model 6 yı aynanda görüyorz, burada kameranın kilidini kaldırabilirsin, 360 dönsün otomatik, mouse la oynatınca da döndürebilelim.
+
+
+
+scene 4 te ise model 7 yi yüklüyoruz. 
+
+model 7de ise farklı olarka, tek bir modelin üzerinden gidiyoruz. 
+
+fakat burda üstteki yerlerde kamera konumları değişiyor. 
+
+her bir kamera belirtilen konumda, tıokı şuanki kodda olduğu gibi y ekseninde 360 dönmelidir.
+
+hepsinin yüksekliği 1.6 metre, x ve y konumlarını veriyorum blender a göre, eğer 3js te farklıysa, ona göre entergre et lütfen. üst kısımda kameraların isimleri bu şekilde yazsın. her biri için ortho perspective ayarlayabilip, aynı zamanda da lens width ayarı da yapılabilmelidir.
+
+camera 1: salon : 1,4 e -0,6
+
+camera 2:  bathroom -2, -3.8
+
+Camera 3: bedroom 1  4,5 e -0.6
+
+camera 4: bedroom 1 WC 3,3e -4
+
+Camera5: bedroom 2 : -2ye 0.24
+
+camera 6: bedroom 2 WC: -2ye -2.1 
+
+
+
+bir sonraki scene imizde ise, bu son sahneinin içinde yürüyebilyor olmamız lazım. yani walkthru mode un da bir swithch bitşey yok, sadece bu sahnenin içinde yürüyoruz şimdilik. ve bu kadar.
+
+
+
+her seferinde, her scene de ve her senaryosunda, her birisi için kamera lensi ortho mu perspektif mi, nerde duruyor, nereye bakıyor, nasıl hareket ediyor, her seferinde modellerle beraber bu senaryoyu kod olarak sıralı bir şekilde görmem gerkeiyor. yani function runSequence() { tarzı birşey yap, herşey ordan yönetilsin. bu esnada, her bir senaryonun bir audiosu da olacaktur, dolayısıyla onu da görmeliyiz orda, audioALLstop, audio 5 play, gibi birşey mesela.
+
+
+
+şaunda bulunan ana mekanımızı da kaldır böylelikke, const spaceUrl = de bulunan glb yi, anlattığım şekilde olmalıdır.
+
+yeni modellerimiz bunlar. 
+
+
+
+https://raw.githubusercontent.com/decentralize-dfw/vea-randomfiles/main/DEMO2city-opt-v2.glbMODEL1DEMO2city-opt-v2.glb
+
+https://raw.githubusercontent.com/decentralize-dfw/vea-randomfiles/main/DEMO2city-ghost.glbMODEL2DEMO2city-ghost.glb
+
+https://raw.githubusercontent.com/decentralize-dfw/vea-randomfiles/main/DEMO2city-metal-v1.glbMODEL3DEMO2city-metal-v1.glb
+
+https://raw.githubusercontent.com/decentralize-dfw/vea-randomfiles/main/DEMO2city-whitefacade-v3.glbMODEL4DEMO2city-whitefacade-v3.glb
+
+https://raw.githubusercontent.com/decentralize-dfw/vea-randomfiles/main/DEMO2kopuk-normalfacade-opt-v5.glbMODEL5DEMO2kopuk-normalfacade-opt-v5.glb
+
+https://raw.githubusercontent.com/decentralize-dfw/vea-randomfiles/main/DEMO2-sehirici-apartmanici-opt-v6.glbMODEL6DEMO2-sehirici-apartmanici-opt-v6.glb
+
+https://raw.githubusercontent.com/decentralize-dfw/vea-randomfiles/main/DEMO2interior-soloapartement-opt-v4.glbMODEL7DEMO2interior-soloapartement-opt-v4.glb
